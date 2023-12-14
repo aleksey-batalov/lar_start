@@ -1,0 +1,19 @@
+Laravel Creative!
+https://www.youtube.com/watch?v=cL1eXKsnRJI
+
+Сортировка на AJAX
+https://www.youtube.com/watch?v=Cq7I5xqQixU
+
+
+Хорошо рассказано - так и сделано!!!!
+Фильтрация - грязная 
+https://www.youtube.com/watch?v=gvXsjRw0jnA
+чистая
+https://www.youtube.com/watch?v=E7P4wf0hPwM
+---------------------------------------------------------------------------------
+
+1) Создана тестовая модель Product b таблица product через миграцию (пример)
+2) Создан контроллер ProductController (пример)
+3) Создана "вьюха" test.product_with_filters
+4) Создан Class - app/ProductsFilter
+	

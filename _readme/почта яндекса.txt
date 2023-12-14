@@ -1,0 +1,28 @@
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.yandex.ru
+MAIL_PORT=587
+MAIL_USERNAME=noreply@vacanc.ru
+MAIL_PASSWORD=ПАРОЛЬ
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=noreply@vacanc.ru
+MAIL_FROM_NAME=Vacanc
+
+php artisan config:cache
+
+
+//мой рабочий вариант
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.yandex.ru
+MAIL_PORT=587
+MAIL_USERNAME=batalov@eccon.ru
+MAIL_PASSWORD=Batalov40
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=batalov@eccon.ru
+MAIL_FROM_NAME="${APP_NAME}"
+
+
+
+
+//еще вариант типа
+MAIL_MAILER=smtp
+MAIL_HOST=yandex.ru

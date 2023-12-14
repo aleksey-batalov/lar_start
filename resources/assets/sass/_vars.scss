@@ -1,0 +1,76 @@
+//// Цвета
+$white: #ffffff;
+$black: #333;
+$primary: #0dbc91;
+$primary-dark: darken($primary, 20);
+$primary-light: lighten($primary, 50);
+$secondary: lighten($black, 75);//#f7f9fa
+$alert: #e3000f;
+
+
+//// Шрифты
+$bold: 'Montserrat-Bold', sans-serif;
+$medium: 'Montserrat-Medium', sans-serif;
+$normal: 'Montserrat-Regular', sans-serif;
+$light: 'Montserrat-Light', sans-serif;
+
+
+//// Подключение шрифтов
+@mixin font-face($font-name){
+  font-display: fallback;
+  src: url('../fonts/' + $font-name + '.eot');
+  src: url('../fonts/' + $font-name + '.woff2') format('woff2'),
+  url('../fonts/' + $font-name + '.woff') format('woff'),
+  url('../fonts/' + $font-name + '.ttf') format('truetype'),
+  url('../fonts/' + $font-name + '.svg#' + $font-name + '') format('svg'),
+  url('../fonts/' + $font-name + '.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+//// Адаптивка
+@mixin max($width){
+  @media screen and (max-width:$width){
+    @content;  }
+}
+@mixin min($width){
+  @media screen and (min-width:$width){
+    @content;  }
+}
+@mixin max_1169($width: 1169px){
+  @media screen and (max-width:$width){
+    @content;  }
+}
+@mixin min_1170($width: 1170px){
+  @media screen and (min-width:$width){
+    @content;  }
+}
+@mixin min_1920($width: 1920px){
+  @media screen and (min-width:$width){
+    @content;  }
+}
+// Tablet
+@mixin max_1023($width: 1023px){
+  @media screen and (max-width:$width){
+    @content;  }
+}
+
+// Mobile
+@mixin max_767($width: 767px){
+  @media screen and (max-width:$width){
+    @content;  }
+}
+
+// IPhone 11PRo Max - 414px
+//(тут меняются картинки на мобильные)
+@mixin max_450($width: 450px){
+  @media screen and (max-width:$width){
+    @content;  }
+}
+@mixin max_350($width: 350px){
+  @media screen and (max-width:$width){
+    @content;  }
+}
+
+

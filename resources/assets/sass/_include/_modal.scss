@@ -1,0 +1,200 @@
+@import "../vars";
+
+/*****  Modal Window  *****/
+
+.modal-overlay,
+.modal-second-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  overflow: auto;
+  -webkit-overflow-scrolling:touch;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  -webkit-animation: fade .3s;
+  -moz-animation: fade .3s;
+  animation: fade .3s;
+}
+.modal-table,
+.modal-second-table{
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.modal-cell,
+.modal-second-cell{
+  display: table-cell;
+  padding: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+@include max_450 {
+  .modal-cell.cart{
+    padding: 5px;
+  }
+}
+.modal-wrapper,
+.modal-second-wrapper{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+  padding:55px 25px 35px;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22), 0 19px 60px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22), 0 19px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22), 0 19px 60px rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing:border-box;
+}
+@include max_450 {
+  .modal-wrapper,
+  .modal-second-wrapper{
+    padding: 50px 25px 35px;
+  }
+}
+@include max_350 {
+  .modal-wrapper,
+  .modal-second-wrapper{
+    padding: 45px 15px 30px;
+  }
+  .modal-wrapper.cart {
+    padding-left: 5px;
+  }
+}
+
+/*****  /Modal Window  *****/
+
+
+
+/*****  Modal Window - Content  *****/
+
+.popup-container {
+  display: none;
+}
+
+.popup {
+  /* .popup__title */
+  &__title {
+    font: 24px/1 $bold;
+    color: $black;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  /* .popup__title-descr */
+  &__title-descr {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  /* .popup__form */
+  &__form {
+    //переопределение
+    .check-wrapper {
+      max-width: 225px;
+    }
+  }
+  /* .popup__inputs */
+  &__inputs {
+    //переопределение
+    .input {
+      width: 100%;
+      margin-bottom: 7px;
+      border: 1px solid lighten($black, 40);
+    }
+    .textarea {
+      width: 100%;
+      border: 1px solid lighten($black, 40);
+    }
+    .input-label {
+      text-align: left;
+      color: $black;
+    }
+    .input.submit-btn {
+      padding: 13px 20px;
+      border: 1px solid $primary;
+      max-width: 280px;
+      display: table;
+      margin: 25px auto 0 auto;
+
+    }
+  }
+
+  /* .popup__inputs-title */
+  &__inputs-title {
+    font: 20px $bold;
+    color: $primary;
+    margin: 23px 0 13px 9px;
+    text-align: left;
+    span {
+      font: 20px $medium;
+    }
+  }
+  /* .popup__link */
+  &__link {
+    display: block;
+    font: 18px $medium;
+    color: $primary;
+    margin-top: 12px;
+    text-align: center;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#popup-soglasie,
+#popup-email{
+  position: relative;
+  background: #fff;
+  padding: 15px 20px 5px 20px;
+  text-align: left;
+
+  @include max_450{
+    padding: 15px 5px 5px 5px;
+  }
+}
+
+/*--- Согласие ---*/
+#popup-agreement {
+  text-align: left!important;
+  h2 {
+    font: 23px/1.2 $bold;
+    margin-bottom: 30px;
+    max-width: 400px;
+    text-transform: none;
+    height: 100%;
+    border: 0;
+  }
+  h3 {
+    font: 18px/1.4 $bold;
+    margin: 20px 0 15px 0;
+    color: #333;
+  }
+  p {
+    font: 16px/1.6 $normal;
+    margin: 0 0 10px 0;
+  }
+  ul li{
+    font: 16px/1.6 $normal;
+    list-style:none;
+    margin: 0 0 10px 30px;
+  }
+
+  @media screen and (max-width:480px) {
+    padding: 0;
+    h2 {font-size: 19px;}
+    h3 {font-size: 16px;}
+    p {font: 15px/1.5 $normal; margin: 0 0 10px 0;}
+    ul li{font: 15px/1.5 $normal; margin: 0 0 10px 15px;}
+  }
+}
+
+
+/*****  /Modal Window - Content  *****/

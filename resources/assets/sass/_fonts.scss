@@ -1,0 +1,18 @@
+@import "vars";
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  @include font-face("montserrat-regular");
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  @include font-face("montserrat-medium");
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  @include font-face("montserrat-light");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  @include font-face("montserrat-bold");
+}

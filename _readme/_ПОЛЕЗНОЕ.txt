@@ -1,0 +1,26 @@
+excel
+https://www.youtube.com/watch?v=64xb-gihv94
+https://laravel-excel.com/
+------------------------
+
+Админка AdminLTE (laravel 8) + Роли пользователя (laravel 8,9)
+https://www.youtube.com/c/VladislavGroniuk
+Resource Controllers
+https://www.youtube.com/watch?v=TpVUDmUyAFs
+
+------------------------
+
+Фильтрация данных
+Laravel Creative!
+https://www.youtube.com/watch?v=cL1eXKsnRJI
+
+Сортировка на AJAX
+https://www.youtube.com/watch?v=Cq7I5xqQixU
+
+Хорошо рассказано
+Фильтрация - грязная 
+https://www.youtube.com/watch?v=gvXsjRw0jnA
+чистая
+https://www.youtube.com/watch?v=E7P4wf0hPwM
+
+------------------------

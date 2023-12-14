@@ -1,0 +1,16 @@
+-----------
+Laravel Mix 
+-----------
+//настройка в
+webpack.mix.js
+
+// Run all Mix tasks...
+npm run dev
+
+// Run all Mix tasks and minify output...
+npm run prod
+
+// Run Watching
+npm run watch
+npm run watch-poll
+
